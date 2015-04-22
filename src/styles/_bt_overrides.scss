@@ -1,0 +1,66 @@
+/*OVERRIDES normal bootstrap with custom css/scss not only variables*/
+
+/*blockquote*/
+$blockquote-color: $bt_lightblue;
+$blockquote-font: 'calibrermedium', Arial;
+
+
+.navbar {
+  .container {
+    padding-left: 0px;
+  }
+}
+
+
+// Blockquotes
+blockquote {
+  padding: ($line-height-computed / 2) $line-height-computed;
+  margin: 0 0 $line-height-computed;
+  border-left: 3px solid $blockquote-color;
+
+  font-family: $blockquote-font;
+  p {
+    font-size: ($font-size-base * 1.5);
+    color: $blockquote-color;
+    font-weight: 100;
+    line-height: 1.25;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  small {
+    display: block;
+    line-height: $line-height-base;
+    color: $blockquote-color;
+    &:before {
+      content: '\2014 \00A0'; // EM DASH, NBSP
+    }
+  }
+
+  footer {
+  	color: $blockquote-color;
+  	font-family: $blockquote-font;
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid $blockquote-color;
+    border-left: 0;
+    p,
+    small,
+    .small {
+      text-align: right;
+    }
+    small,
+    .small {
+      &:before {
+        content: '';
+      }
+      &:after {
+        content: '\00A0 \2014'; // NBSP, EM DASH
+      }
+    }
+  }
+}
