@@ -1,0 +1,23 @@
+{
+  "name": "bord4-styles",
+  "version": "0.0.1",
+  "description": "An example of a bower project",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BergensTidende/bord4-styles"
+  },
+  "author": "Bord4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BergensTidende/bord4-styles/issues/"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.5"
+  }
+}
