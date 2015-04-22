@@ -12,4 +12,8 @@ Dette er et bower-komponent med BT Bord4s spesifikke Bootstrap stiler og tilpass
 
 ## Bruke pakken/stilene i et prosjekt
 
-TODO
+1. Installer pakken i ditt prosjekt med:
+```bower install git@github.com:BergensTidende/bord4-styles.git --save```
+
+2. Pass på at du importerer BT styles i din main.scss slik:
+```@import 'bord4-styles/src/styles/bt_bootstrap';```
