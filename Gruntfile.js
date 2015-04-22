@@ -17,8 +17,16 @@ grunt.initConfig({
     server: {                    // Another target
       options: {
         sassDir: 'src/styles',
-        cssDir: 'dist/css',
+        cssDir: '.tmp/css',
         importPath: ['bower_components']
+      }
+    },
+    dist: {                    // Another target
+      options: {
+        sassDir: 'src/styles',
+        cssDir: 'dist/css',
+        importPath: ['bower_components'],
+        environment: 'production'
       }
     }
   },
@@ -26,7 +34,7 @@ grunt.initConfig({
     server: {
       options: {
         port: 9000,
-        base: 'dist'
+        base: ['src', '.tmp']
       }
     }
   }
