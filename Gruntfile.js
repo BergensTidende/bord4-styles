@@ -23,15 +23,6 @@ grunt.initConfig({
                     livereload: true
                 }
     },
-    livereload: {
-                options: {
-                    livereload: true
-                },
-                files: [
-                    'src/{,*/}*.html',
-                    '.tmp/css/{,*/}*.css',
-                ]
-            }
   },
   compass: {                              // Task
     server: {                    // Another target
@@ -56,7 +47,7 @@ grunt.initConfig({
         port: 9000,
         base: ['src', '.tmp'],
         keepalive: true,
-        livereload: 35729
+        livereload: 35729,
       },
     },
     livereload: {
