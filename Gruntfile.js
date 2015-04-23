@@ -2,16 +2,36 @@
 module.exports = function(grunt) {
 grunt.loadNpmTasks('grunt-contrib-compass');
 grunt.loadNpmTasks('grunt-contrib-connect');
+grunt.loadNpmTasks('grunt-contrib-watch');
 
 grunt.initConfig({
- watch: {
-        compass: {
-            files: ['styles/{,*/}*.{scss,sass}'],
-            tasks: ['sass:server'],
-            options: {
-                livereload: true
+  watch: {
+    options: {
+      livereload: true,
+    },
+    css: {
+        files: ['src/styles/{,*/}*.scss'],
+        tasks: ['compass:server'],
+        options: {
+                    livereload: true
+                }
+    },
+    html: {
+        files: ['src/{,*/}*.html'],
+        tasks: [],
+        options: {
+                    livereload: true
+                }
+    },
+    livereload: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    'src/{,*/}*.html',
+                    '.tmp/css/{,*/}*.css',
+                ]
             }
-        }
   },
   compass: {                              // Task
     server: {                    // Another target
@@ -34,13 +54,35 @@ grunt.initConfig({
     server: {
       options: {
         port: 9000,
-        base: ['src', '.tmp']
-      }
-    }
+        base: ['src', '.tmp'],
+        keepalive: true,
+        livereload: 35729
+      },
+    },
+    livereload: {
+                options: {
+                    open: true,
+                    port: 9000,
+                    base: [
+                    '.tmp',
+                    'src'
+                    ]
+                }
+            },
+  },
+  livereload: {
+            options: {
+                livereload: '<%= connect.options.livereload %>'
+            },
+            files: [
+                 'src/*.html',
+                '.tmp/css/{,*/}*.css',
+              ]
+            }
   }
-});
+  );
 
-grunt.registerTask('serve', ['compass:server', 'connect:server:keepalive']);
+grunt.registerTask('serve', ['compass:server', 'connect:livereload', 'watch']);
 grunt.registerTask('default', ['compass:server']);
 
 };
