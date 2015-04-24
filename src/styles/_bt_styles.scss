@@ -89,7 +89,13 @@
 	}
 }
 
-footer {
+blockquote {
+	footer {
+		text-align: left;
+	}
+}
+
+footer.bottom {
   border-top: 1px solid #a1a1a1;
   margin: 0px;
   width: 100%;
@@ -111,6 +117,27 @@ footer {
     }
 
   }
+}
+
+
+.magblue {
+    color: $bt_magblue;
+}
+
+.orange {
+    color: $bt_orange;
+}
+
+.red {
+    color: $bt_red;
+}
+
+.darkblue {
+	color: $bt_darkblue;
+}
+
+.lightblue {
+	color: $bt_lightblue;
 }
 
 

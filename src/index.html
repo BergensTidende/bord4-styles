@@ -29,16 +29,16 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<h1>Heading 1 <small>Smallhead</small></h1>
-				<h2>Heading 2</h2>
-				<h3>Heading 3</h3>
-				<h4>Heading 4</h4>
-				<h5>Heading 5</h5>
+				<h2>Heading 2 <small>Smallhead</small></h2>
+				<h3>Heading 3 <small>Smallhead</small></h3>
+				<h4>Heading 4 <small>Smallhead</small></h4>
+				<h5>Heading 5 <small>Smallhead</small></h5>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<p class="lead">This is lead text</p>
+				<p class="lead">For å se alle Bootstrap-elementene, <a href="http://getbootstrap.com/css/" target="_blank">TRYKK HER</a>. Dette er forresten en lead text.</p>
 				<p>Pastrami meatball boudin pork cow bacon. Turducken short loin short ribs brisket, shankle venison beef. Drumstick tail prosciutto short ribs. Cow turkey tri-tip pancetta pig. Chuck shankle brisket andouille frankfurter beef tail fatback short ribs sausage pork chop flank pig.</p>
 				<p class="bignumber">115</p>
 			</div>
@@ -76,17 +76,125 @@
 			<div class="col-md-10 col-md-offset-1">
 				<h4>Tekstfarger</h4>
 				<p class="text-primary">text-primary</p>
-		        <p class="text-info">text-info</p>
-		        <p class="text-warning">text-warning</p>
+				<p class="text-info">text-info</p>
+				<p class="text-warning">text-warning</p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<blockquote>
-				  <p>Et bra sitat her som kommer fra en som mener mye om mangt</p>
-				  <footer>Ola Nordmann <cite title="Source Title">Kilde</cite></footer>
+					<p>Et bra sitat her som kommer fra en som mener mye om mangt</p>
+					<footer>Ola Nordmann <cite title="Source Title">Kilde</cite></footer>
 				</blockquote>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th></th>
+								<th>
+									Extra small devices
+									<small>Phones (&lt;768px)</small>
+								</th>
+								<th>
+									Small devices
+									<small>Tablets (&ge;768px)</small>
+								</th>
+								<th>
+									Medium devices
+									<small>Desktops (&ge;992px)</small>
+								</th>
+								<th>
+									Large devices
+									<small>Desktops (&ge;1200px)</small>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="text-nowrap" scope="row">Container width</th>
+								<td>None (auto)</td>
+								<td>750px</td>
+								<td>970px</td>
+								<td>1170px</td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Class prefix</th>
+								<td><code>.col-xs-</code></td>
+								<td><code>.col-sm-</code></td>
+								<td><code>.col-md-</code></td>
+								<td><code>.col-lg-</code></td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Column width</th>
+								<td class="text-muted">Auto</td>
+								<td>~62px</td>
+								<td>~81px</td>
+								<td>~97px</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="bs-example" data-example-id="contextual-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Column heading</th>
+								<th>Column heading</th>
+								<th>Column heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="active">
+								<th scope="row">1</th>
+								<td>active</td>
+								<td>Column content</td>
+								<td>Column content</td>
+							</tr>
+							<tr class="success">
+								<th scope="row">3</th>
+								<td>success</td>
+								<td>Column content</td>
+								<td>Column content</td>
+							</tr>
+							<tr class="info">
+								<th scope="row">5</th>
+								<td>info</td>
+								<td>Column content</td>
+								<td>Column content</td>
+							</tr>
+							<tr class="warning">
+								<th scope="row">7</th>
+								<td>warning</td>
+								<td>Column content</td>
+								<td>Column content</td>
+							</tr>
+							<tr class="danger">
+								<th scope="row">8</th>
+								<td>danger</td>
+								<td>Column content</td>
+								<td>Column content</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- /example -->
 			</div>
 		</div>
 
@@ -102,16 +210,25 @@
 
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
+
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Sjekk meg ut!
+					</label>
+				</div>
+
+				<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+			<!-- </div> -->
+
+			<!-- <div class="row"> -->
+			<div class="col-md-10 col-md-offset-1">
 				<h4>Farger</h4>
-				<div class="block magblue">
-					bt_magblue
-				</div>
-				<div class="block red">
-					bt_red
-				</div>
-				<div class="block yellow">
-					bt_yellow
-				</div>
+				<h2 class="red">bt_red</h2>
+				<h2 class="magblue">bt_magblue</h2>
+				<h2 class="orange">bt_orange</h2>
+				<h2 class="darkblue">bt_darkblue</h2>
+				<h2 class="lightblue">bt_lightblue</h2>
 			</div>
 		</div>
 
@@ -130,24 +247,20 @@
 		</div>
 
 	</div>
-	<footer>
-	    <div class="center">
-	        <p>Ansvarlig redaktør:</p>
-	        <p>Gard Steiro</p>
-	        <p>Bergens Tidende arbeider etter Vær Varsom-plakatens regler for god presseskikk.</p>
-	        <p>Alt innhold er opphavsrettslig beskyttet.</p>
-	        <p>© Bergens Tidende.</p>
-	    </div>
+
+	<footer class="bottom">
+		<div class="center">
+			<p>Ansvarlig redaktør:</p>
+			<p>Gard Steiro</p>
+			<p>Bergens Tidende arbeider etter Vær Varsom-plakatens regler for god presseskikk.</p>
+			<p>Alt innhold er opphavsrettslig beskyttet.</p>
+			<p>© Bergens Tidende.</p>
+		</div>
 	</footer>
 
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<blockquote>
-			  <p>Et bra sitat her som kommer fra en som mener mye om mangt</p>
-			  <footer>Ola Nordmann <cite title="Source Title">Kilde</cite></footer>
-			</blockquote>
-		</div>
-	</div>
+
+
+
 
 
 	<div class="row">
@@ -158,25 +271,9 @@
 
 
 
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-
-		</div>
-	</div>
 
 
 
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-
-		</div>
-	</div>
 
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
