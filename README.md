@@ -1,6 +1,8 @@
 #Bord4-styles
 
-Dette er et bower-komponent med BT Bord4s spesifikke Bootstrap stiler og tilpassede stiler.
+This repo is a bower component of all stylesheets used by Bergens Tidenes data journalism team, Bord4. The styles are a custom [Twitter Bootstrap](https://github.com/twbs/bootstrap) build with extra styles that we use often. All fonts referenced in this project are copyrighted. Everything else is MIT licensed.
+
+##Documentation in Norwegian
 
 ## Utvikle pakken
 * Clon repositoriet
