@@ -5,6 +5,7 @@
   "authors": [
     "Bord4"
   ],
+  "main": ["dist/css/bt_bootstrap.css"],
   "description": "Bergens Tidende specific bootstrap styles",
   "keywords": [
     "bootstrap"
